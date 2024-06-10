@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">FoodApp</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notification">Notification</string>
+
+    <string-array name="State">
+        <item>Delhi</item>
+        <item>Uttar Pradesh</item>
+    </string-array>
+
+    <string-array name="Shipper">
+        <item>Shipper 1</item>
+        <item>Shipper 2</item>
+    </string-array>
+
+    <string-array name="DishName">
+        <item>Dal Rice</item>
+        <item>Sabji Roti</item>
+        <item>Aloo Paratha</item>
+        <item>Chicken Naan</item>
+        <item>Chole Rice</item>
+        <item>Puri Sabji</item>
+        <item>Kachori Sabji</item>
+        <item>Mix Veges</item>
+        <item>Mix Paratha</item>
+        <item>Egg Curry</item>
+        <item>Dum Chicken</item>
+        <item>Hyderabadi Dum Biryani</item>
+        <item>Veg Dum Biryani</item>
+    </string-array>
+</resources>
