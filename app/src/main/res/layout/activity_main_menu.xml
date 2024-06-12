@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/back2"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    tools:context=".MainMenu">
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="423dp"
+        android:layout_height="740dp"
+        android:background="@drawable/background_shape"
+        android:fadingEdge="none"
+        android:paddingLeft="10dp"
+        android:scrollbarSize="18dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_marginBaseline="20dp"
+        app:srcCompat="@drawable/img1" />
+
+    <LinearLayout
+        android:id="@+id/linearlayout"
+        android:layout_width="275dp"
+        android:layout_height="390dp"
+        android:background="@drawable/background_shape"
+        android:fadingEdge="horizontal"
+        android:orientation="vertical"
+        android:padding="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.498">
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="220dp"
+            android:layout_height="104dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="-8dp"
+            app:srcCompat="@drawable/title" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#59FFFFFF"
+            android:fontFamily="cursive"
+            android:padding="8dp"
+            android:scrollbarSize="18dp"
+            android:text="Homemade Food"
+            android:textAlignment="center"
+            android:textColor="#F80000"
+            android:textColorLink="#D62A2A"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/SignwithEmail"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="15dp"
+            android:drawableLeft="@drawable/whitmail"
+            android:gravity="center"
+            android:paddingLeft="21dp"
+            android:shadowColor="#FF1744"
+            android:text="Log in with Email" />
+
+        <Button
+            android:id="@+id/SignwithPhone"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="13dp"
+            android:drawableLeft="@drawable/phonewhit"
+            android:text="Log in with Phone" />
+
+        <LinearLayout
+            android:layout_width="90dp"
+            android:layout_height="1dp"
+            android:layout_gravity="clip_horizontal"
+            android:layout_marginTop="20dp"
+            android:background="#7C7A7A"
+            android:orientation="vertical">
+
+            <TableRow
+                android:id="@+id/hr"
+                android:layout_width="90dp"
+                android:layout_height="1dp"
+                android:layout_marginTop="20dp">
+
+            </TableRow>
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="TextView" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

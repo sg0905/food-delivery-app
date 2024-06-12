@@ -1,15 +1,13 @@
 package com.example.foodapp;
 
 import android.animation.AnimatorListenerAdapter;
+import android.content.Intent;
 import android.os.Bundle;
-import android.view.ViewPropertyAnimator;
+import android.os.Handler;
 import android.widget.ImageView;
 import android.widget.TextView;
 import android.animation.Animator;
 import androidx.activity.EdgeToEdge;
-import android.animation.AnimatorListenerAdapter;
-import android.os.Bundle;
-import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
@@ -44,9 +42,17 @@ public class MainActivity extends AppCompatActivity {
 
                                                                         }
                                                                     });
+        new Handler().postDelayed(new Runnable() {
+            @Override
+            public void run() {
+                Intent intent = new Intent(MainActivity.this, MainMenu.class);
+                startActivity(intent);
+                finish();
+            }
+        }, 3000);
 
 
-        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
+        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.back2), (v, insets) -> {
             Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
